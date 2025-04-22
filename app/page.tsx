@@ -18,7 +18,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <a href="#" className="text-white text-3xl font-bold tracking-tight">
             3D Estimator
-          </a>
+          </a>   
           <div className="space-x-6">
             <a href="#about" className="text-white hover:underline text-lg">About</a>
             <a href="#contact" className="text-white hover:underline text-lg">Contact</a>
