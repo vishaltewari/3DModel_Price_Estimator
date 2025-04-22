@@ -24,7 +24,7 @@ export default function HomePage() {
             <a href="#contact" className="text-white hover:underline text-lg">Contact</a>
             <Button
               onClick={handleRedirect}
-              className="bg-amber-400 hover:bg-amber-500 text-black font-semibold transition px-4 py-2"
+              className="bg-amber-400 cursor-pointer hover:bg-amber-500 text-black font-semibold transition px-4 py-2"
             >
               Get Quote
             </Button>
@@ -43,7 +43,7 @@ export default function HomePage() {
           </p>
           <Button
             onClick={handleRedirect}
-            className="bg-white hover:bg-gray-100 text-purple-700 font-bold px-6 py-3 rounded-full shadow-lg transition"
+            className="bg-white cursor-pointer hover:bg-gray-100 text-purple-700 font-bold px-6 py-3 rounded-full shadow-lg transition"
           >
             Get Instant Quote
           </Button>
