@@ -1,5 +1,3 @@
-// app/page.tsx
-
 "use client"
 
 import { Button } from "@/components/ui/button"
@@ -14,34 +12,38 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-b from-white via-rose-50 to-white font-sans text-gray-800">
       {/* Navbar */}
-      <nav className="bg-blue-600 py-4">
-        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <a href="#" className="text-white text-2xl font-bold">3D Price Estimator</a>
+      <nav className="bg-rose-600 shadow-md sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+          <a href="#" className="text-white text-3xl font-bold tracking-tight">
+            3D Estimator
+          </a>
           <div className="space-x-6">
-            <a href="#about" className="text-white">About</a>
-            <a href="#contact" className="text-white">Contact</a>
+            <a href="#about" className="text-white hover:underline text-lg">About</a>
+            <a href="#contact" className="text-white hover:underline text-lg">Contact</a>
             <Button
-              onClick={handleRedirect} // Use onClick to navigate
-              className="bg-green-500 hover:bg-green-600 text-white"
+              onClick={handleRedirect}
+              className="bg-amber-400 hover:bg-amber-500 text-black font-semibold transition px-4 py-2"
             >
-              Get Instant Quote
+              Get Quote
             </Button>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="flex items-center justify-center bg-blue-500 py-24 text-center text-white">
-        <div>
-          <h1 className="text-4xl font-semibold mb-4">Instant 3D Model Price Estimation</h1>
-          <p className="mb-6 text-xl">
-            Upload your 3D model and get an instant price quote based on material, size, and more!
+      <section className="bg-gradient-to-r from-purple-600 via-red-500 to-orange-400 text-white py-32 px-6 text-center">
+        <div className="max-w-3xl mx-auto">
+          <h1 className="text-5xl font-extrabold mb-6 drop-shadow-sm">
+            Instantly Estimate 3D Printing Costs
+          </h1>
+          <p className="text-xl mb-8 leading-relaxed">
+            Just upload your 3D model and see pricing based on volume, material, and more—within seconds.
           </p>
           <Button
-            onClick={handleRedirect} // Use onClick for redirect
-            className="bg-yellow-500 hover:bg-yellow-600 text-white"
+            onClick={handleRedirect}
+            className="bg-white hover:bg-gray-100 text-purple-700 font-bold px-6 py-3 rounded-full shadow-lg transition"
           >
             Get Instant Quote
           </Button>
@@ -49,27 +51,30 @@ export default function HomePage() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <Card>
+      <section id="about" className="py-24">
+        <div className="max-w-5xl mx-auto px-6">
+          <Card className="rounded-xl shadow-lg border-none">
             <CardHeader>
-              <CardTitle className="text-center text-2xl font-bold">Why Choose Us?</CardTitle>
+              <CardTitle className="text-center text-3xl font-bold text-rose-600">
+                Why Choose Us?
+              </CardTitle>
             </CardHeader>
-            <CardContent className="text-center">
-              <p className="text-lg text-gray-600">
-                Our 3D Price Estimator helps you quickly determine the cost of 3D printing based on various factors such as material, size, and infill density. Get accurate pricing instantly.
-              </p>
+            <CardContent className="text-center text-lg text-gray-700 leading-relaxed">
+              Our AI-powered estimator delivers fast, accurate quotes based on your STL file’s properties.
+              We support a wide range of materials and printers. No more manual calculations.
             </CardContent>
           </Card>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 bg-gray-100">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-4">Get in Touch</h2>
-          <p className="text-xl text-gray-600 mb-8">Have any questions? Reach out to us anytime.</p>
-          <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+      <section id="contact" className="py-24 bg-gradient-to-b from-violet-100 to-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold text-violet-700 mb-4">Let’s Talk</h2>
+          <p className="text-xl text-gray-700 mb-8">
+            Got questions or feedback? Reach out to our team and we’ll get back to you shortly.
+          </p>
+          <Button className="bg-violet-600 hover:bg-violet-700 text-white px-6 py-3 text-lg font-medium rounded-lg shadow-md">
             Contact Us
           </Button>
         </div>
@@ -77,3 +82,5 @@ export default function HomePage() {
     </div>
   )
 }
+
+
