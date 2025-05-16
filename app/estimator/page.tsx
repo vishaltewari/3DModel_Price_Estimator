@@ -47,7 +47,7 @@ export default function Estimator() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 to-white p-8">
-      <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">🧮 3D Model Price Estimator</h1>
+      <h1 className="text-3xl font-bold text-center mb-8 text-gray-800"> 3D Model Price Estimator</h1>
 
       <Card className="max-w-7xl mx-auto rounded-2xl shadow-xl border border-gray-200">
         <CardContent className="p-8 space-y-6">
@@ -65,15 +65,12 @@ export default function Estimator() {
             {previewURL && (
               <div className="flex-1">
                 
-                {/* <iframe
-                  src={`https://viewstl.com/?embedded&url=${previewURL}`}
-                  className="w-full h-[400px] rounded-lg border"
-                  title="3D Model Viewer"
-                ></iframe> */}
-                <iframe id="fileviewer" src="https://www.viewstl.com/?embedded" className="w-full h-[400px] rounded-lg border"
+                </div>
+            )}
+                {/* <iframe id="fileviewer" src="https://www.viewstl.com/?embedded" className="w-full h-[400px] rounded-lg border"
                   title="3D Model Viewer"></iframe>
               </div>
-            )}
+            )} */}
 
          
             {result && (
